@@ -1,5 +1,5 @@
 import logo from "../assets/images/logo.png"; 
-import mah from "../assets/images/mah.png"; // Assuming you have a logo image in the assets folder
+import mah from "../assets/images/mah.png"; 
 
 const Footer = () => {
   return (
