@@ -39,7 +39,7 @@ export const featuresCardData = [
     icon: customerService,
     title: "24/7 Support",
     description:
-      "Need Help? We’re Always Awake! At Mahfuz, your peace of mind matters. That’s why we offer 24/7 customer support, ensuring you get fast, reliable help whenever you need it day or night.",
+      "Need Help? We’re Always Awake!At Mahfuz, your peace of mind matters. That’s why we offer 24/7 customer support, ensuring you get fast, reliable help whenever you need it day or night.",
   },
   {
     id: 4,
