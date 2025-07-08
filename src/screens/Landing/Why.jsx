@@ -1,0 +1,44 @@
+import React from "react";
+import { whyCaremed } from "../../data";
+import FeatureCard from "../../components/FeatureCard";
+
+const WhyCaremed = () => {
+  const cols = 4; // grid-cols-4
+  const rows = Math.ceil(whyCaremed.length / cols);
+
+  return (
+    <section className="py-24 bg-muted/30 p-10">
+      <div className="container w-[90%] mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+            Why Caremed Connect
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            Healthcare that works for you
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          {whyCaremed.map((item, index) => {
+            const isLastCol = (index + 1) % cols === 0;
+            const isLastRow = Math.floor(index / cols) === rows - 1;
+
+            return (
+              <FeatureCard
+                key={index}
+                title={item.title}
+                description={item.description}
+                Icon={item.Icon}
+                index={index}
+                isLastCol={isLastCol}
+                isLastRow={isLastRow}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyCaremed;

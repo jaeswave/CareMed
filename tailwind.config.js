@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-bg": "url('/src/assets/images/heroBg.png')",
+        "hero-bg": "url('/src/assets/hero.png')",
         "about-bg": "url('/src/assets/images/aboutBg.png')",
         "join-bg": "url('/src/assets/images/joinBg.png')",
         "product-bg": "url('/src/assets/images/productHero.png')",
@@ -14,19 +14,17 @@ export default {
         outfit: ["Outfit"],
       },
       colors: {
-        customBlue: "#322F69",
-        customSkyblue: "#0AAEF0",
-        customWhite: "#FFFFFF",
-        cardBlue: "#EEF9FE",
+        customBlue: "#083D96",
+        customRed: "#E01F29",
       },
       keyframes: {
-        'scroll-left': {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
+        shimmer: {
+          "0%": { backgroundPosition: "200% 0" },
+          "100%": { backgroundPosition: "-200% 0" },
         },
       },
       animation: {
-        'scroll-left': 'scroll-left 20s linear infinite',
+        shimmer: "shimmer 2s linear infinite",
       },
     },
   },

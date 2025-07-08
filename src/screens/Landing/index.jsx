@@ -1,23 +1,28 @@
+import React from "react";
+import Nav from "../../components/Nav";
 import Home from "./Home";
-import Features from "./Features";
-import OurProducts from "./OurProducts";
-import Benefits from "./Benefits";
-import LogoAnimate from "./LogoAnimate";
-import SectionTwo from "./SectionTwo";
-import Bene from "./Bene"
-import Questions from "./Questions";
+import HowItWorks from "./HowItWorks";
+import Why from "./Why";
+import Services from "./Services";
+import Who from "./Who";
+import Testimonial from "./Testimonial";
+import Partners from "./Partners";
+import CallToAction from "./CallToAction";
+import Footer from "../../components/Footer";
 
 const Landing = () => {
   return (
     <>
+      <Nav />
       <Home />
-      <LogoAnimate />
-      <SectionTwo />
-      <Features />
-      <OurProducts />
-      <Benefits />
-      <Bene/>
-      <Questions />
+      <HowItWorks />
+      <Why />
+      <Services />
+      <Who />
+      <Testimonial />
+      <Partners />
+      <CallToAction />
+      <Footer />
     </>
   );
 };

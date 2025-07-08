@@ -1,107 +1,39 @@
-import logo from "../assets/images/logo.png"; 
-import mah from "../assets/images/mah.png"; 
+import React from "react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <>
-      <footer className=" py-10 px-6 md:px-20">
-        <div className="container mx-auto flex flex-col md:flex-row gap-8">
-          <div className="place-items-center  md:place-items-start w-full md:w-[50%]">
-            <div className="w-[25%] px-3">
-              <img src={logo} alt="Mahfuz Microfinance" className="w-32 mb-4" />
-            </div>
-            <p className="text-sm w-full md:w-[45%] text-center md:text-start">
-            Mahfuz MFB (Non-interest) is a non-interest digital microfinance bank in Nigeria that is set to offer a wide range of financial services to users
-            </p>
-          </div>
-          <div className="grid grid-cols-2 place-items-center space-y-5 md:space-y-0 md:flex  w-full md:w-[50%] md:justify-between">
-            <div className="">
-              <h3 className="font-semibold text-lg mb-3">Short links</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:underline">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Products
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="hover:underline">
-                    FAQs
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="">
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:underline">
-                    Wallet
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Cards
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Takaful
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="">
-              <h3 className="font-semibold text-lg mb-3">Other pages</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:underline">
-                    Help Center
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-4">Contact</h3>
-              <address className="text-gray-900 space-y-2">
-                <p>T08, Lagos-Norodu Road,<br />
-                Haruna Bus Stop,<br />
-                Norodu,<br />
-                Lagos</p>
-                <p>+324 814 634 6279<br />
-                +324 802 359 5041</p>
-                <p>info@mathuzmfb.com<br />
-                mathuznimfb@gmail.com</p>
-              </address>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-10 border-t border-gray-400 pt-4 text-sm flex flex-col md:flex-row justify-between items-center space-y-0 md:space-y-3">
-          <p>
-            All rights reserved{" "}
-            <a href="#" className="hover:underline font-bold">
-              Privacy Policy
-            </a>
+    <footer className="bg-muted/50 py-12">
+      <div className="container max-w-4xl mx-auto text-center space-y-6">
+        <div>
+          <h2 className="text-xl font-semibold text-foreground mb-2">
+            Caremed Connect
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Connecting you to quality care — fast.
           </p>
-          <p>&copy; 2025 Mahfuz MFB. All rights reserved.</p>
         </div>
-      </footer>
-      <div className="mt-10 flex justify-center">
-        <img src={mah} alt="mahfuz" className="w-auto h-[30vh]" />
+
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <Phone className="h-4 w-4 text-primary" />
+            +234-XXX-XXXXXXX
+          </div>
+          <div className="flex items-center gap-2">
+            <Mail className="h-4 w-4 text-primary" />
+            hello@caremedconnect.com
+          </div>
+          <div className="flex items-center gap-2">
+            <MapPin className="h-4 w-4 text-primary" />
+            Lagos, Nigeria
+          </div>
+        </div>
+
+        <p className="text-xs text-muted-foreground mt-4">
+          © 2024 Caremed Connect. All rights reserved.
+        </p>
       </div>
-    </>
+    </footer>
   );
 };
 
