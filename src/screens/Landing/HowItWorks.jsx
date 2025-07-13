@@ -5,7 +5,7 @@ import { howItWorks } from "../../data";
 
 const HowItWorks = () => {
   return (
-    <section className="w-full min-h-[80vh] p-20 flex itemx-center">
+    <section className="w-full min-h-[90vh] flex items-center bg-gradient-to-br from-[#fff5f5] to-[#e6f0ff] p-5 lg:p-10">
       <div className="w-[90%] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold font-outfit mt-10">How It Works</h2>
@@ -14,7 +14,7 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-10 mt-10 mx-auto w-full">
+        <div className="grid lg:grid-cols-3 gap-10 mt-10 lg:mt-20 w-full">
           {howItWorks.map((step) => (
             <StepCards
               key={step.number}

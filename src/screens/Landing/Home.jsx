@@ -18,25 +18,8 @@ const itemVariants = {
 
 const Home = () => {
   return (
-    <section className="w-full h-[100vh] relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-[#e6f0ff] via-white to-[#fff5f5] font-outfit">
-      {/* Decorative icons */}
-      <div className="absolute inset-0 pointer-events-none opacity-10 select-none">
-        <img
-          src="/src/assets/icons/heart.svg"
-          alt=""
-          className="absolute top-10 left-10 w-10"
-        />
-        <img
-          src="/src/assets/icons/pill.svg"
-          alt=""
-          className="absolute bottom-10 right-20 w-12"
-        />
-        <img
-          src="/src/assets/icons/stethoscope.svg"
-          alt=""
-          className="absolute top-1/2 left-5 w-10"
-        />
-      </div>
+    <section className="mt-10 w-full h-[70vh] md:h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] font-outfit">
+
 
       {/* Background glow/pulse */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-white to-customRed/10 blur-2xl opacity-60 animate-pulse" />
@@ -50,20 +33,20 @@ const Home = () => {
       >
         <motion.div
           variants={itemVariants}
-          className="mx-auto max-w-4xl text-center"
+          className="mx-auto max-w-[80%] text-center"
         >
           <motion.h1
             variants={itemVariants}
-            className="text-xl sm:text-3xl mb-2"
+            className="text-lg sm:text-3xl mb-2"
           >
-            🚀 Now Available: Holter ECG Monitoring
+            Now Available: Holter ECG Monitoring
           </motion.h1>
 
           <motion.h1
             variants={itemVariants}
             className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
           >
-            <span className="text-foreground">Caremed</span>{" "}
+            <span className="text-outfit">CareMed</span>{" "}
             <span className="bg-gradient-to-r from-customBlue via-blue-400 to-customBlue bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer">
               Connect
             </span>
@@ -78,7 +61,7 @@ const Home = () => {
 
           <motion.p
             variants={itemVariants}
-            className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto"
+            className="mt-2 text-lg text-muted-foreground max-w-3xl mx-auto"
           >
             Affordable, premium healthcare services booked in seconds.
           </motion.p>
@@ -88,17 +71,17 @@ const Home = () => {
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button title="Partner With Us" />
+              <Button title="Partner With Us" className="!bg-white !text-customBlue border-2 !border-customBlue" />
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button title="Book Service" className="!bg-customRed" />
+              <Button title="Book Service" className="!bg-customBlue" />
             </motion.div>
           </motion.div>
 
           {/* Down arrow */}
           <motion.div
             variants={itemVariants}
-            className="mt-10 animate-bounce text-2xl text-customBlue"
+            className="mt-10 animate-bounce text-2xl font-bold text-customBlue"
           >
             ↓
           </motion.div>

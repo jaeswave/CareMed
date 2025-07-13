@@ -4,8 +4,9 @@ import { whoWeServe } from "../../data";
 
 const Who = () => {
   return (
-    <section className="p-20 bg-muted/30">
-      <div className="container">
+    <section className="w-full min-h-[80vh] flex items-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] p-5 lg:p-10">
+      {" "}
+      <div className="w-[90%] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
             Who We Serve
@@ -16,7 +17,7 @@ const Who = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl">
+          <div className="grid lg:grid-cols-3 gap-10 mt-10 w-full">
             {whoWeServe.map((item, i) => (
               <AudienceCard
                 key={i}

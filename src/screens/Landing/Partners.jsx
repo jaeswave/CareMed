@@ -1,6 +1,7 @@
 import React from "react";
 import Partner from "../../components/Partner";
 import { partnerBenefits } from "../../data";
+import Button from "../../components/Button";
 
 const Partners = () => {
   const half = Math.ceil(partnerBenefits.length / 2);
@@ -8,10 +9,11 @@ const Partners = () => {
   const col2 = partnerBenefits.slice(half);
 
   return (
-    <section id="partners" className="py-24 bg-muted/30">
-      <div className="container">
+    <section className="w-full min-h-[80vh] flex items-center bg-gradient-to-br from-[#fff5f5] to-[#e6f0ff] p-5 lg:p-10">
+      {" "}
+      <div className="w-[90%] mx-auto">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-6">
+          <h2 className="text-3xl font-bold sm:text-4xl mb-6">
             Partner With Us
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
@@ -33,11 +35,11 @@ const Partners = () => {
             </div>
           </div>
 
-          <button className="bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all px-6 py-2 rounded-lg text-sm font-medium mb-4">
-            Become a Partner Clinic
-          </button>
-
-          <p className="text-muted-foreground italic">
+          <Button
+            title={"Book Your Slot Now"}
+            className="!bg-white !text-customBlue border-2 border-customBlue"
+          />
+          <p className="mt-4 italic">
             Partner with us and let your empty slots serve more lives.
           </p>
         </div>

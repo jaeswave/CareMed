@@ -7,7 +7,8 @@ const WhyCaremed = () => {
   const rows = Math.ceil(whyCaremed.length / cols);
 
   return (
-    <section className="py-24 bg-muted/30 p-10">
+    <section className="w-full min-h-[80vh] flex items-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] p-5 lg:p-10 pt-20 lg:pt-0">
+      {" "}
       <div className="container w-[90%] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
@@ -18,7 +19,7 @@ const WhyCaremed = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4">
           {whyCaremed.map((item, index) => {
             const isLastCol = (index + 1) % cols === 0;
             const isLastRow = Math.floor(index / cols) === rows - 1;

@@ -4,8 +4,8 @@ import { testimonials } from "../../data";
 
 const Testimonial = () => {
   return (
-    <section className="py-24 bg-muted/30">
-      <div className="container">
+    <section className="w-full min-h-[80vh] flex items-center bg-gradient-to-br from-[#fff5f5] to-[#e6f0ff] p-5 lg:p-10">
+      <div className="w-[90%] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
             What Our Patients Say
@@ -15,7 +15,7 @@ const Testimonial = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="w-full mx-auto">
           {testimonials.map((t, i) => (
             <TestimonialCard
               key={i}
