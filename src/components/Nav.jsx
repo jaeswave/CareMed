@@ -70,11 +70,42 @@ const Nav = ({ openContact }) => {
       </div>
 
       {/* Mobile Menu */}
-      
-
+      <AnimatePresence>
+        {navOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="bg-customBlue text-white fixed top-14 left-0 w-full h-[30vh] flex flex-col items-center justify-center z-50"
+          >
+            <div className="flex flex-col items-center gap-4">
+              {navLinks.map(({ label, path, isPopup }) =>
+                isPopup ? (
+                  <button
+                    key={label}
+                    onClick={openContact}
+                    className="text-lg hover:text-blue-200 cursor-pointer bg-transparent border-none"
+                  >
+                    {label}
+                  </button>
+                ) : (
+                  <Link
+                    key={label}
+                    to={path}
+                    className="text-lg hover:text-blue-200"
+                    onClick={closeMenu}
+                  >
+                    {label}
+                  </Link>
+                )
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
 
 export default Nav;
-
