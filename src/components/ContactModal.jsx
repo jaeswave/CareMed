@@ -6,8 +6,8 @@ import { FaWhatsapp } from "react-icons/fa";
 const ContactModal = ({ isOpen, onClose }) => {
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
-      <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
-      <div className="fixed inset-0 flex items-center justify-center p-4">
+      <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
+      <div className="fixed inset-0 flex items-center justify-center p-10">
         <Dialog.Panel className="mx-auto w-full max-w-md rounded-xl bg-white p-6 shadow-xl space-y-4">
           <Dialog.Title className="text-xl font-bold">Contact Us</Dialog.Title>
 
