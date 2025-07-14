@@ -6,3 +6,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.clip-tag {
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%);
+}

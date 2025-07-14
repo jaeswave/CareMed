@@ -18,7 +18,7 @@ const itemVariants = {
 
 const Home = () => {
   return (
-    <section className="mt-16 w-full h-[70vh] md:h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] font-outfit">
+    <section className="bg-hero-bg bg-center bg-cover bg-no-repeat mt-16 w-full h-[70vh] md:h-[100vh] flex items-center justify-center  font-outfit">
 
 
       {/* Background glow/pulse */}
@@ -44,7 +44,7 @@ const Home = () => {
 
           <motion.h1
             variants={itemVariants}
-            className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
+            className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-[9rem]"
           >
             <span className="text-outfit">CareMed</span>{" "}
             <span className="bg-gradient-to-r from-customBlue via-blue-400 to-customBlue bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer">
@@ -54,14 +54,14 @@ const Home = () => {
 
           <motion.p
             variants={itemVariants}
-            className="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto"
+            className="mt-6 text-sm lg:text-2xl w-full lg:w-[70%] mx-auto bg-customBlue text-white rounded-3xl p-1 lg:p-2"
           >
             Connecting you to quality care — fast.
           </motion.p>
 
           <motion.p
             variants={itemVariants}
-            className="mt-2 text-lg text-muted-foreground max-w-3xl mx-auto"
+            className="mt-2 text-xl max-w-3xl mx-auto"
           >
             Affordable, premium healthcare services booked in seconds.
           </motion.p>

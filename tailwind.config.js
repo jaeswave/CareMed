@@ -4,10 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-bg": "url('/src/assets/hero.png')",
-        "about-bg": "url('/src/assets/images/aboutBg.png')",
-        "join-bg": "url('/src/assets/images/joinBg.png')",
-        "product-bg": "url('/src/assets/images/productHero.png')",
+        "hero-bg": "url('/src/assets/hero-bg.png')",
+        "join-bg": "url('/src/assets/join-bg.png')",
       },
       fontFamily: {
         urbanist: ["Urbanist"],
