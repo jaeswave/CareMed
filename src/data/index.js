@@ -2,19 +2,16 @@ import {
   FaStethoscope,
   FaCalendarCheck,
   FaHouseMedical,
- 
 } from "react-icons/fa6";
 import { Clock, Heart, CheckCircle, Shield } from "lucide-react";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaUsers, FaHeart, FaShieldAlt } from "react-icons/fa";
 
-
-
 export const navLinks = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about-us" },
   { label: "Services", path: "/services" },
-  { label: "Contact Us", path: "/contact-us" },
+  { label: "Contact Us", isPopup: true },
 ];
 
 export const howItWorks = [
@@ -40,11 +37,6 @@ export const howItWorks = [
   },
 ];
 
-
-
-
-
-
 export const whyCaremed = [
   {
     title: "Fast Access",
@@ -67,9 +59,6 @@ export const whyCaremed = [
     Icon: Shield,
   },
 ];
-
-
-
 
 export const currentService = {
   badge: "Available Now",
@@ -97,9 +86,6 @@ export const upcomingServices = {
   ],
 };
 
-
-
-
 export const whoWeServe = [
   {
     icon: FaUsers,
@@ -118,18 +104,12 @@ export const whoWeServe = [
   },
 ];
 
-
-
-
 export const partnerBenefits = [
   "Seamless patient referrals",
   "Centralized customer support",
   "Transparent reporting",
   "Guaranteed payout per completed service",
-
 ];
-
-
 
 export const testimonials = [
   {
@@ -168,9 +148,6 @@ export const testimonials = [
       "Loved the ease of use and quick response time. The home service was a bonus!",
   },
 ];
-
-
-
 
 export const categories = [
   {

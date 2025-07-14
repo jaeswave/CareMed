@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../../components/Nav";
 import Home from "./Home";
 import HowItWorks from "./HowItWorks";
 import Why from "./Why";
@@ -8,12 +7,10 @@ import Who from "./Who";
 import Testimonial from "./Testimonial";
 import Partners from "./Partners";
 import CallToAction from "./CallToAction";
-import Footer from "../../components/Footer";
 
 const Landing = () => {
   return (
     <>
-      <Nav />
       <Home />
       <HowItWorks />
       <Why />
@@ -22,7 +19,6 @@ const Landing = () => {
       <Testimonial />
       <Partners />
       <CallToAction />
-      <Footer />
     </>
   );
 };

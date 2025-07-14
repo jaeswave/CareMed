@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../data";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Nav = () => {
+const Nav = ({ openContact }) => {
   const [navOpen, setNavOpen] = useState(false);
   useScreenSize(setNavOpen);
 
@@ -33,15 +33,25 @@ const Nav = () => {
 
         {/* Center - Nav Links */}
         <div className="hidden lg:flex justify-center gap-10">
-          {navLinks.map(({ label, path }) => (
-            <Link
-              key={path}
-              to={path}
-              className="text-lg text-black hover:text-customBlue"
-            >
-              {label}
-            </Link>
-          ))}
+          {navLinks.map(({ label, path, isPopup }) =>
+            isPopup ? (
+              <button
+                key={label}
+                onClick={openContact}
+                className="text-lg text-black hover:text-customBlue cursor-pointer bg-transparent border-none"
+              >
+                {label}
+              </button>
+            ) : (
+              <Link
+                key={label}
+                to={path}
+                className="text-lg text-black hover:text-customBlue"
+              >
+                {label}
+              </Link>
+            )
+          )}
         </div>
 
         {/* Right - Buttons & Mobile Icon */}
@@ -60,36 +70,11 @@ const Nav = () => {
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {navOpen && (
-          <motion.div
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -100, opacity: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="lg:hidden absolute top-15 left-0 w-full h-[30vh] bg-customBlue text-white z-50 flex flex-col items-center justify-center space-y-6 text-2xl"
-          >
-            {navLinks.map(({ label, path }, index) => (
-              <motion.div
-                key={path}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: 0.3 + index * 0.2,
-                  duration: 0.5,
-                  ease: "easeOut",
-                }}
-              >
-                <Link to={path} onClick={closeMenu}>
-                  {label}
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
+      
+
     </nav>
   );
 };
 
 export default Nav;
+
