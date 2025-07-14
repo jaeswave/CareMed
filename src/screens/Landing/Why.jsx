@@ -7,7 +7,7 @@ const WhyCaremed = () => {
   const rows = Math.ceil(whyCaremed.length / cols);
 
   return (
-    <section className="w-full min-h-[80vh] flex items-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] p-5 lg:p-10 pt-20 lg:pt-0">
+    <section className="w-full min-h-[80vh] flex items-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] py-20">
       {" "}
       <div className="container w-[90%] mx-auto">
         <div className="text-center mb-16">

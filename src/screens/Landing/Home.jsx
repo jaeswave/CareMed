@@ -18,7 +18,7 @@ const itemVariants = {
 
 const Home = () => {
   return (
-    <section className="mt-10 w-full h-[70vh] md:h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] font-outfit">
+    <section className="mt-16 w-full h-[70vh] md:h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#e6f0ff] to-[#fff5f5] font-outfit">
 
 
       {/* Background glow/pulse */}

@@ -5,7 +5,7 @@ import { howItWorks } from "../../data";
 
 const HowItWorks = () => {
   return (
-    <section className="w-full min-h-[90vh] flex items-center bg-gradient-to-br from-[#fff5f5] to-[#e6f0ff] p-5 lg:p-10">
+    <section className="w-full min-h-[90vh] flex items-center bg-gradient-to-br from-[#fff5f5] to-[#e6f0ff] py-10">
       <div className="w-[90%] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold font-outfit mt-10">How It Works</h2>

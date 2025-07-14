@@ -11,11 +11,11 @@ const fadeInUp = {
 
 const CareMed = () => {
   return (
-    <section className="w-full py-24 bg-gradient-to-br from-[#fff5f5] to-[#e6f0ff]">
+    <section className="w-full mt-16 py-10 bg-gradient-to-br from-[#fff5f5] to-[#e6f0ff]">
       <motion.div
         initial="hidden"
         animate="visible"
-        className="w-[70%] mx-auto"
+        className="w-[90%] md:w-[80%] mx-auto"
         variants={{
           visible: { transition: { staggerChildren: 0.15 } },
         }}

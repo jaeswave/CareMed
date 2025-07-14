@@ -169,3 +169,83 @@ export const testimonials = [
   },
 ];
 
+
+
+
+export const categories = [
+  {
+    icon: "🫀",
+    title: "Cardiac Diagnostics",
+    services: [
+      "7-day Holter ECG Monitoring",
+      "Holter ECG (24/48-hour monitoring)",
+      "24-hour Ambulatory Blood Pressure Monitoring (ABPM)",
+      "Resting 12-Lead ECG (at home or clinic)",
+      "Echocardiography (Heart Ultrasound)",
+      "Cardiac Stress Test (Treadmill ECG)",
+    ],
+  },
+  {
+    icon: "🧬",
+    title: "Laboratory Services",
+    services: [
+      "Full Blood Count (FBC)",
+      "Liver and Kidney Function Tests",
+      "Blood Sugar (Fasting/Random/OGTT)",
+      "Lipid Profile (Cholesterol Test)",
+      "Hormonal Assays",
+      "Infectious Disease Screening (HIV, Hepatitis B & C, Malaria)",
+      "COVID-19 PCR and Rapid Tests",
+      "Cancer Markers (e.g., PSA, CA 125)",
+    ],
+  },
+  {
+    icon: "🖥️",
+    title: "Radiology & Imaging",
+    services: [
+      "Ultrasound (General, Obstetric, Abdominal, Pelvic, Breast, etc.)",
+      "X-Ray (Chest, Limb, Spine, etc.)",
+      "CT Scan (Head, Chest, Abdomen, etc.)",
+      "MRI (Brain, Spine, Joint, etc.)",
+      "Mammography",
+      "Fluoroscopy (HSG, Barium meal, IVU)",
+    ],
+  },
+  {
+    icon: "🧠",
+    title: "Neurology Diagnostics",
+    services: [
+      "Electroencephalogram (EEG)",
+      "Nerve Conduction Studies (NCS/EMG)",
+      "Brain Imaging (MRI/CT Scan)",
+    ],
+  },
+  {
+    icon: "👩‍⚕️",
+    title: "Specialist Referrals & Booking Support",
+    services: [
+      "Cardiologist Appointments",
+      "Pathologist Review",
+      "Radiologist Review",
+      "Internal Medicine",
+      "Gynecologist & Obstetrician Access",
+      "Pediatrician",
+      "Endocrinologist (Diabetes, Thyroid, etc.)",
+    ],
+  },
+  {
+    icon: "🏠",
+    title: "Home-Based & Corporate Services",
+    services: [
+      "Home ECG & Blood Pressure Monitoring",
+      "Home Blood Sample Collection",
+      "Corporate Wellness Screening Packages",
+      "On-site Diagnostic Camps for Organizations",
+    ],
+  },
+  {
+    icon: "📲",
+    title: "Booking is Easy",
+    services: ["Our Website", "WhatsApp", "Partner Clinics and Facilities"],
+  },
+];
