@@ -4,14 +4,14 @@ import {
   FaHouseMedical,
 } from "react-icons/fa6";
 import { Clock, Heart, CheckCircle, Shield } from "lucide-react";
-import { FaCheckCircle } from "react-icons/fa";
+// import { FaCheckCircle } from "react-icons/fa";
 import { FaUsers, FaHeart, FaShieldAlt } from "react-icons/fa";
 
 export const navLinks = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about-us" },
   { label: "Services", path: "/services" },
-  { label: "Contact Us", isPopup: true },
+  { label: "Contact Us", path: "/contact-us" },
 ];
 
 export const howItWorks = [

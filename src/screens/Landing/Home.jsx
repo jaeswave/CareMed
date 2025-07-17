@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: {},
@@ -19,8 +20,6 @@ const itemVariants = {
 const Home = () => {
   return (
     <section className="bg-hero-bg bg-center bg-cover bg-no-repeat mt-16 w-full h-[70vh] md:h-[100vh] flex items-center justify-center  font-outfit">
-
-
       {/* Background glow/pulse */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-white to-customRed/10 blur-2xl opacity-60 animate-pulse" />
 
@@ -71,10 +70,19 @@ const Home = () => {
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button title="Partner With Us" className="!bg-white !text-customBlue border-2 !border-customBlue" />
+              <Link to="/contact-us">
+                <Button
+                  title="Partner With Us"
+                  className="!bg-white !text-customBlue border-2 !border-customBlue"
+                />
+              </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button title="Book Service" className="!bg-customBlue" />
+              <Link to="/contact-us#book-service">
+                {" "}
+                {/* Scrolls to book-service section */}
+                <Button title="Book Service" className="!bg-customBlue" />
+              </Link>
             </motion.div>
           </motion.div>
 

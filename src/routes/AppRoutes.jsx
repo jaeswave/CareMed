@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Paths from "./paths";
 import Layout from "../layout";
-import NotFound from "../screens/NotFound"; // make sure the path is correct
+import NotFound from "../screens/NotFound"; 
 
 const AppRouter = () => {
   return (

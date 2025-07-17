@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../data";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Nav = ({ openContact }) => {
+const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
   useScreenSize(setNavOpen);
 
@@ -33,33 +33,26 @@ const Nav = ({ openContact }) => {
 
         {/* Center - Nav Links */}
         <div className="hidden lg:flex justify-center gap-10">
-          {navLinks.map(({ label, path, isPopup }) =>
-            isPopup ? (
-              <button
-                key={label}
-                onClick={openContact}
-                className="text-lg text-black hover:text-customBlue cursor-pointer bg-transparent border-none"
-              >
-                {label}
-              </button>
-            ) : (
-              <Link
-                key={label}
-                to={path}
-                className="text-lg text-black hover:text-customBlue"
-              >
-                {label}
-              </Link>
-            )
-          )}
+          {navLinks.map(({ label, path }) => (
+            <Link
+              key={label}
+              to={path}
+              className="text-lg text-black font-bold hover:text-customBlue/50"
+            >
+              {label}
+            </Link>
+          ))}
         </div>
 
         {/* Right - Buttons & Mobile Icon */}
         <div className="flex items-center space-x-2">
-          <Button
-            title="Book Service"
-            className="hidden md:block !bg-customBlue !text-white"
-          />
+          <Link to="/contact-us#book-services">
+         
+            <Button
+              title="Book Service"
+              className="hidden md:block !bg-customBlue !text-white"
+            />
+          </Link>
           <span
             className="text-3xl cursor-pointer lg:hidden"
             onClick={toggleNav}
@@ -80,26 +73,16 @@ const Nav = ({ openContact }) => {
             className="bg-customBlue text-white fixed top-14 left-0 w-full h-[30vh] flex flex-col items-center justify-center z-50"
           >
             <div className="flex flex-col items-center gap-4">
-              {navLinks.map(({ label, path, isPopup }) =>
-                isPopup ? (
-                  <button
-                    key={label}
-                    onClick={openContact}
-                    className="text-lg hover:text-blue-200 cursor-pointer bg-transparent border-none"
-                  >
-                    {label}
-                  </button>
-                ) : (
-                  <Link
-                    key={label}
-                    to={path}
-                    className="text-lg hover:text-blue-200"
-                    onClick={closeMenu}
-                  >
-                    {label}
-                  </Link>
-                )
-              )}
+              {navLinks.map(({ label, path }) => (
+                <Link
+                  key={label}
+                  to={path}
+                  className="text-lg hover:text-blue-200"
+                  onClick={closeMenu}
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
           </motion.div>
         )}
