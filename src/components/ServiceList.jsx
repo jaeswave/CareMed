@@ -40,7 +40,7 @@ const ServiceList = (props) => {
           </button>
         </div>
       )}
-    </sectio>
+    </section>
   );
 };
 
