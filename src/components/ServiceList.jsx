@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ServiceList = (props) => {
-  const { services, onBookService } = props;
+  const { services, onBookService,id } = props;
   const [selectedService, setSelectedService] = useState(null);
 
   return (
