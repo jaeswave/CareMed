@@ -246,3 +246,13 @@ export   const partnerOptions = [
     description: "Bring our services to your organization",
   },
 ];
+
+  export const services = [
+    { id: 1, name: "ECG Monitoring" },
+    { id: 2, name: "Holter Monitoring" },
+    { id: 3, name: "Cardiac Stress Testing" },
+    { id: 4, name: "Ambulatory Blood Pressure" },
+    { id: 5, name: "Telemedicine Consultation" },
+    { id: 6, name: "Home Health Services" },
+  ];
+

@@ -1,11 +1,11 @@
 import { useState } from "react";
-
+import Button from "../components/Button"
 const ServiceList = (props) => {
   const { services, onBookService,id } = props;
   const [selectedService, setSelectedService] = useState(null);
 
   return (
-    <section  className="bg-white p-6 rounded-lg shadow-lg h-[90vh]">
+    <section className="bg-white/65 p-6 rounded-lg shadow-lg w-full xl:w-[60%] mx-auto">
       <h2 className="text-3xl font-bold mb-6">Book a Service</h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
@@ -32,12 +32,12 @@ const ServiceList = (props) => {
               {services.find((s) => s.id === selectedService).name}
             </span>
           </p>
-          <button
+          <Button
+            title="Book Now"
+            type="button"
             onClick={() => onBookService(selectedService)}
-            className="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700 w-full"
-          >
-            Book Now
-          </button>
+            className="w-full bg-green-600 hover:bg-green-700"
+          />
         </div>
       )}
     </section>

@@ -1,8 +1,9 @@
 import { partnerOptions } from "../data";
+import Button from "../components/Button"
 
 const Partnership = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg h-[80vh]">
+    <div className="bg-white p-6 rounded-lg shadow-lg w-full xl:w-[60%] mx-auto">
       <h2 className="text-3xl font-bold mb-6">Partner With Us</h2>
       <p className="mb-6 font-semibold">
         We collaborate with healthcare providers and organizations to improve
@@ -17,12 +18,18 @@ const Partnership = () => {
           </div>
         ))}
       </div>
-
-      <button className="bg-purple-600 text-white w-full py-2 px-6 rounded hover:bg-purple-700">
-        Learn More About Partnership
-      </button>
+      <Button
+        title="Book Now"
+        type="button"
+        onClick={() => onBookService(selectedService)}
+        className="bg-purple-600 hover:bg-purple-700"
+      />
     </div>
   );
 };
 
 export default Partnership;
+
+
+
+
