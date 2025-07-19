@@ -5,12 +5,6 @@ import  Partnership  from "../../components/Partnership";
 
 
 
-const scrollToSection = (sectionId) => {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
 export const Contact = () => {
   const services = [
     { id: 1, name: "ECG Monitoring" },
@@ -35,8 +29,8 @@ export const Contact = () => {
   };
 
   return (
-    <section className=" mt-16 mb-10 w-full min-h-screen py-10 bg-hero-bg bg-no-repeat bg-cover bg-center">
-      <div className="container mx-auto w-[60%] grid grid-rows-3 space-y-20">
+    <section className=" mt-16 mb-10 w-full min-h-screen px-5 py-10 bg-hero-bg bg-no-repeat bg-cover bg-center">
+      <div className="container mx-auto w-full grid grid-rows-3 gap-5">
         <ContactForm id="contact" onSubmit={handleFormSubmit} />
         <ServiceList id="book-services" services={services} onBookService={handleBookService} />
         <Partnership id="partnership" />

@@ -226,3 +226,23 @@ export const categories = [
     services: ["Our Website", "WhatsApp", "Partner Clinics and Facilities"],
   },
 ];
+
+
+
+export   const partnerOptions = [
+  {
+    id: 1,
+    title: "Healthcare Providers",
+    description: "Join our network of healthcare professionals",
+  },
+  {
+    id: 2,
+    title: "Technology Partners",
+    description: "Integrate with our healthcare platform",
+  },
+  {
+    id: 3,
+    title: "Corporate Wellness",
+    description: "Bring our services to your organization",
+  },
+];

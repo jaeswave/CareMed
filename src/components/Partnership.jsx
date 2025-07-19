@@ -1,26 +1,10 @@
- const Partnership = () => {
-  const partnerOptions = [
-    {
-      id: 1,
-      title: "Healthcare Providers",
-      description: "Join our network of healthcare professionals",
-    },
-    {
-      id: 2,
-      title: "Technology Partners",
-      description: "Integrate with our healthcare platform",
-    },
-    {
-      id: 3,
-      title: "Corporate Wellness",
-      description: "Bring our services to your organization",
-    },
-  ];
+import { partnerOptions } from "../data";
 
+const Partnership = () => {
   return (
-    <div className="partnership bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6">Partner With Us</h2>
-      <p className="mb-6">
+    <div className="bg-white p-6 rounded-lg shadow-lg h-[80vh]">
+      <h2 className="text-3xl font-bold mb-6">Partner With Us</h2>
+      <p className="mb-6 font-semibold">
         We collaborate with healthcare providers and organizations to improve
         patient care.
       </p>
@@ -34,13 +18,11 @@
         ))}
       </div>
 
-      <button className="bg-purple-600 text-white py-2 px-6 rounded hover:bg-purple-700">
+      <button className="bg-purple-600 text-white w-full py-2 px-6 rounded hover:bg-purple-700">
         Learn More About Partnership
       </button>
     </div>
   );
 };
-
-
 
 export default Partnership;

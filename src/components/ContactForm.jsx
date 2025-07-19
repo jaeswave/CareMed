@@ -9,7 +9,8 @@ const schema = yup.object().shape({
   message: yup.string().required("Message is required"),
 });
 
-const ContactForm = ({ onSubmit }) => {
+const ContactForm = (props) => {
+  const { onSubmit } = props
   const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
@@ -29,8 +30,8 @@ const ContactForm = ({ onSubmit }) => {
   };
 
   return (
-    <div className="contact-form bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
+    <section className="bg-white/80 py-5 px-5 rounded-lg shadow-lg h-[60vh]">
+      <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
       <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-4">
         <div className="form-group">
           <label htmlFor="name" className="block mb-1">
@@ -79,12 +80,12 @@ const ContactForm = ({ onSubmit }) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 disabled:opacity-50"
+          className="bg-customBlue w-full text-white py-2 px-6 rounded hover:bg-blue-400 disabled:opacity-50"
         >
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

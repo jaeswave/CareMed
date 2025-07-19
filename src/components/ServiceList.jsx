@@ -5,10 +5,10 @@ const ServiceList = (props) => {
   const [selectedService, setSelectedService] = useState(null);
 
   return (
-    <section id={id} className="service-list bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6">Book a Service</h2>
+    <section  className="bg-white p-6 rounded-lg shadow-lg h-[90vh]">
+      <h2 className="text-3xl font-bold mb-6">Book a Service</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
         {services.map((service) => (
           <div
             key={service.id}
@@ -16,10 +16,10 @@ const ServiceList = (props) => {
             className={`p-4 border rounded-lg cursor-pointer transition-colors ${
               selectedService === service.id
                 ? "bg-blue-50 border-blue-500"
-                : "hover:bg-gray-50"
+                : "hover:bg-gray-200"
             }`}
           >
-            <h3 className="font-medium">{service.name}</h3>
+            <h3 className="font-semibold">{service.name}</h3>
           </div>
         ))}
       </div>
@@ -34,7 +34,7 @@ const ServiceList = (props) => {
           </p>
           <button
             onClick={() => onBookService(selectedService)}
-            className="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700"
+            className="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700 w-full"
           >
             Book Now
           </button>
